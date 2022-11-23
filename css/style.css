@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar-brand img{
+	width: 100px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: rgb(22, 73, 140);
+}
+
+.btn-custom{
+	background-color: rgb(22, 73, 140);
+	color: #fff !important;
+	border-radius: 30px;
+	padding-right: 30px !important;
+	padding-left: 30px !important;
+	border: 1px solid rgb(22, 73, 140);
+	transition: all 0.4s ease;
+}
+.btn-custom:hover{
+	background-color: rgba(22, 73, 140,0);
+	color: rgb(22, 73, 140) !important;
+}
+.banner{
+	background-image: url(../images/b1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgb(60, 62, 64);
+	background-blend-mode: multiply;
+	color: white;
+	text-align: center;
+}
+.banner li{
+	padding: 0 10px;
+}
+.banner .col-6 h3{
+	color: rgb(58, 113, 185);
+font-size:  x-large;}
+.banner .col-6 h1{
+	font-size: 4rem;
+}
+.banner .col-6 p{
+	padding-top: 8px;
+	font-size: smaller;
+    font-weight: 100;
+}
+
+
+.banner .row{
+	min-height: 80vh;
+}
+.banner-btn a{
+	/*background-color: rgb(22, 73, 140);*/
+	color: #fff !important;
+	border-radius: 30px;
+	padding-right: 30px !important;
+	padding-left: 30px !important;
+	border: 1px solid rgb(255, 255, 255);
+	transition: all 0.4s ease;
+	position: relative;
+	font-weight: 600;
+
+
+}
+.banner-btn{
+	animation-name: up-down;
+	animation-duration: 5s;
+	
+	animation-iteration-count: infinite;
+}
+@keyframes up-down{
+ 0%{ transform: translateY(0px); }
+ 50%{
+ 	transform: translateY(10px);
+ }
+ 100%{
+ 	transform: translateY(0px);
+ }
+
+}
+.banner-btn a:hover{
+	background-color: white;
+color: rgb(22, 73, 140) !important;
+}
+
+.banner-btn a::before{
+	content: "";
+	border: 1px solid rgb(255, 255, 255);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: -3px;
+	left: 0;
+	border-radius: 30px;
+}
+.banner-btn a:hover::before{
+	border: 1px solid rgba(255, 255, 255,0);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 30%
+  ;
+    z-index: 1050;
+    display: none;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+.modal-content{
+position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #0b2546;
+   
+    border: 1px solid rgba(0, 0, 0,0);
+    border-radius: 0;
+    outline: 0;
+}
+.btn{
+	background-color: white !important;
+	color: #0b2546 !important;
+}
+
+.about-bbq-section{
+	padding: 100px 0;
+}
+.shadow{
+	box-shadow: 0 8px 18px #b9a9a9 !important;
+	transition: all 0.4s ease;
+}
+.shadow:hover{
+	box-shadow: 0 0px 0px #6963636e !important ;
+}
+.about-bbq{
+	padding: 0 40px;
+	text-align: center;
+
+}
+.about-bbq h1{
+	color: #16498c;
+    font-size: 2.5rem;
+}
+.about-bbq h4{
+	font-size: larger;
+    /* text-align: center; */
+    padding-left: 40px;
+    text-transform: capitalize;
+    color: #767e86;
+}
+.about-bbq h5{
+	padding-top: 10px;
+	padding-bottom: 5px;
+    font-size: medium;
+    font-weight: 600;
+}
+.about-bbq p{}
+.about-bbq .btn{
+background-color:#16498c !important;
+color: white !important;
+}
+.about-bbq .btn:hover{
+	background-color:white !important;
+	color: #16498c !important;
+}
+
+.logo{
+	padding: 100px 0;
+}
+.feature{
+	background-image: url(../images/banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	text-align: center;
+	background-color: #636e72;
+    background-blend-mode: darken;
+}
+.feature .row{
+	min-height: 60vh;
+}
+
+.feature h2{
+font-size: 2.5rem;
+    color: #adc9ef;
+    text-transform: capitalize;
+}
+.feature h6{
+	text-transform: capitalize;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.feature p{
+	font-size: small;
+}
+.logo img{
+	filter: grayscale(1);
+}
+.logo img:hover{
+	filter: grayscale(0);
+}
+.menu{
+	padding: 100px 0;
+}
+
+.menu h3{
+	text-transform: capitalize;
+    font-size: 1.25rem;
+}
+.menu h1{
+	    color: #16498c;
+}
+.menu p{
+	font-size: smaller;
+    color: #74808a;
+}
+.menu img{
+	border-radius: 50%;
+	box-shadow: 0 5px 15px #6963636e !important ;
+}
+.food{
+	padding: 100px 0;
+	
+	
+	background-color: white;
+	
+}
+.review{
+	text-align: center;
+	padding-bottom: 50px;
+}
+.review h1{
+	text-transform: capitalize;
+	color: #16498c;
+}
+.review p{
+	font-size: smaller;
+    padding: 0 200px;
+    color: #7f878e;
+}
+.food ul{}
+.food ul li{
+	text-align: center;
+	padding: 0 10px;
+}
+.food ul li h2{
+	    font-size: large;
+	    padding: 8px 0;
+}
+}
+.food ul li p{
+	font-size: small !important;
+}
+
+.food img{
+	border-radius: 50%;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: small;
+}
+
+.offer{
+	background-image: url(../images/hh.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 100px 0;
+	background-color: darkblue;
+	background-blend-mode: lighten;
+
+}
+.offer .row{
+	min-height: 20vh;
+}
+.offer h6{
+	text-transform: capitalize;
+}
+.offer h1{
+
+color: #16498c;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+.offer p{}
+.offer .btn{
+	background-color: transparent !important;
+	position: relative;
+	animation-name: up-down;
+	animation-duration: 5s;
+	
+	animation-iteration-count: infinite;
+}
+.offer .btn::before{
+	content: "";
+	border: 1px solid  #16498c ;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: -3px;
+	left: 0;
+	border-radius: 30px;
+}
+.offer .btn:hover::before{
+	border:none;
+}
+.offer .btn:hover{
+	background-color: #16498c !important; 
+	color: white !important;
+}
+
+@keyframes up-down{
+ 0%{ transform: translateY(0px); }
+ 50%{
+ 	transform: translateY(20px);
+ }
+ 100%{
+ 	transform: translateY(0px);
+ }
+
+
+
+footer {
+    background-image: url(../images/f1.jpg);
+    background-size: cover;
+    background-color: #000000e0;
+    background-blend-mode: color-burn;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
